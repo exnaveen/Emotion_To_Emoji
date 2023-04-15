@@ -32,7 +32,7 @@ function check()
 
 function speak()
 {
-    var synth = windwo.speechSynthesis;
+    var synth = window.speechSynthesis;
     speak_data_1= "The first prediction is" + prediction_1;
     speak_data_2= "The second prediction is" + prediction_2;
     var utterThis = new SpeechSynthesisUtterance(speak_data_1+ speak_data_2);
@@ -69,15 +69,15 @@ function gotResult(error, results)
 
      if(results[1].label == "happy")
      {
-        document.getElementById("update_emoji").innerHTML = "&#128522;";
+        document.getElementById("update_emoji2").innerHTML = "&#128522;";
      }
      if(results[1].label == "sad")
      {
-        document.getElementById("update_emoji").innerHTML = "&#128532;";
+        document.getElementById("update_emoji2").innerHTML = "&#128532;";
      }
      if(results[1].label == "angry")
      {
-        document.getElementById("update_emoji").innerHTML = "&#128548;";
+        document.getElementById("update_emoji2").innerHTML = "&#128548;";
      }
     }
 }
